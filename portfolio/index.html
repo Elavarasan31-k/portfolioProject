@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>E</span>lavarasan.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Full Stack Developer</p>
+                <h1>Hi,I'm <span>Elavarasan</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img-1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                  <h1 class="sub-title">About me</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quo totam culpa nostrum tenetur vel ullam! Atque laboriosam temporibus esse porro reiciendis? Eaque distinctio maxime, qui earum eligendi beatae numquam!</p>
+                  <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Web Development</li>
+                        <li><span>java Development</span><br>back end Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS apps</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>2023-Year Of Passout</li>
+                        <li><span>6-month</span><br>JAava FullStack Course</li>
+                        <li><span>jul/2023-sep/2023</span><br>Internship at infotech</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>SSLC from State Board with 88%</li>
+                        <li><span>2019</span><br>HSC from State Board with 66%</li>
+                        <li><span>2023</span><br>BE from Anna Univercity with 80%</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- ----------------------services------------------ -->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Developer</h2>
+                    <p>Java FullStack Developer..i'm complete my Java FullStack course..Core Java,J2EE,HTML,CSS,JS,Bootstrab,SQL...now i'm a fullstack Developer..i'm create the IT standard projects</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-border-top-left"></i>
+                    <h2>Front End Developer</h2>
+                    <p>Front End Developer..i'm complete my front end course..HTML,CSS,JAVA SCRIPT,FRAMEWORKS...now i'm create a one responsive project in the front end..</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Back End Developer</h2>
+                    <p>Back End Developer...i'm complete my back end course..JAVA,J2EE,HYPER NET...now i'm develop the IT standard project in the backend also.I know the SQL Database.I'm write the SQL query in the Oracle SQL++ </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- ------------------portfolio-------------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="work-list">
+            <div class="work" id="pic1">
+                <img src="htmlcssjs.jpg" alt="" >
+                <div class="layer">
+                    <h3>HTML5,CSS3,JS</h3>
+                    <p>The app connects you to the talented peoples around the world.
+                        download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" id="pic">
+                <img src="Java-Emblem.jpg" alt="">
+                <div class="layer">
+                    <h3>CORE JAVA,J2EE</h3>
+                    <p>The app connects you to the talented peoples around the world.
+                        download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" id="pic2">
+                <img src="sql.avif" alt="">
+                <div class="layer">
+                    <h3>ORACLE SQL</h3>
+                    <p>The app connects you to the talented peoples around the world.
+                        download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+      </div>
+      <!-- -------------contact-------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">Contact me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>elavarasan112233@gmail.com</p>
+                  <p><i class="fa-solid fa-square-phone"></i>+91 9788727740</p>
+                  <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+                   <!-- used to dounload keyword the file is download -->
+                  <a href="ELAVARASAN K.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                  <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message"  rows="6" placeholder="Add Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Elavarasan. Made with <i class="fa-solid fa-heart" id="heart"></i> for everyone</p>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
